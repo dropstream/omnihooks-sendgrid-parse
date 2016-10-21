@@ -1,0 +1,1 @@
+require 'omnihooks/strategies/sendgrid_parse'

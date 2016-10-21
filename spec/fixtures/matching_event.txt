@@ -1,0 +1,67 @@
+--xYzZY
+Content-Disposition: form-data; name="headers"
+
+Received: by mx0021p1mdw1.sendgrid.net with SMTP id QQJtcdBSFB Fri, 21 Oct 2016 19:55:49 +0000 (UTC)
+Received: from mail-wm0-f54.google.com (mail-wm0-f54.google.com [74.125.82.54]) by mx0021p1mdw1.sendgrid.net (Postfix) with ESMTPS id 7294C5461ED for <test@webhooks.getdropstream.com>; Fri, 21 Oct 2016 19:55:49 +0000 (UTC)
+Received: by mail-wm0-f54.google.com with SMTP id c78so3734830wme.0 for <test@webhooks.getdropstream.com>; Fri, 21 Oct 2016 12:55:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=getdropstream-com.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=V2qUA3Ng1aBMqo+ly9ine3wAYJhE1AY2nA3LvWBBhU0=; b=wRa3tHANOGvXb0XX8mpLW+a1rJn544vBpdvjhQ9hpvziPChlRhq39FYywEZPGCZuas lWwhCD/JoOmbf8/zu0qcFsjZlG0wCVBrJuYkGSq0dl/NxJRGkUe/3uMXD6q5gpevbHQ6 NyOfXNrd2AsP0uVAFbDu9XtaOmEjKMiL7SCeTJTAYx3AAbFoyyB+yTa3ghK2RHrIybzB rvSbwXoWl7xbQFZIFbRjVp9gBEk55iy4tyE7Jgr/a0CB8Z/ETnpab9DZ0S0bOzAoCOq3 aI0zckpHPR3c4hlPzKGhVeMx6cTDcUopWVIuqwef35VSU3hxY0cMQg7TfZhv2feUE9sI +0fw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=V2qUA3Ng1aBMqo+ly9ine3wAYJhE1AY2nA3LvWBBhU0=; b=gragX7S+JrMXPvW4A1Qxyed5cvryx0OCG5voYp2a/ERPrW1rWJyoDODL8jIoImHAwq 4E96EKHzMROHGfy8kyIWwjy+Qa+lx42o4sfHuTfzNgm1tVvmUHQJprpwAu3oJi8KBpev rrd8Ui8MoU/Ho5FOH6nORu6FkS9suk0TyFp2RjHGQX0Wa2pnBG09ic+un5udxY/efamG 9/09rOsLmecjcW1DD5hbU4cw1yAUYcFIwh1sy4csDoAS+8hhYfhT7q2jRvy/EMGwEFoZ A7qKjqaj40LscVRGfkxEY8jtBIJtHrzv9Jwb3oa8GhweYsvW26BiA4mBx8wLcJA36J26 nZ9Q==
+X-Gm-Message-State: ABUngvfeCYNsAe+Nze1W3XScYddCRpEhZ7J4ll7RUmqES5VNUC+V4hgc577eU9L/cULnBAdbY72edsCFO3qbe6N+Sw0=
+X-Received: by 10.194.16.161 with SMTP id h1mr2143581wjd.164.1477079748095; Fri, 21 Oct 2016 12:55:48 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.80.161.6 with HTTP; Fri, 21 Oct 2016 12:55:47 -0700 (PDT)
+From: Karl Falconer <karl.falconer@getdropstream.com>
+Date: Fri, 21 Oct 2016 15:55:47 -0400
+Message-ID: <CABjXp4HCwcCM=QAkPwOdQ=W2qTMjQRYu477V=RXsUq0G=Pfc+g@mail.gmail.com>
+Subject: ere
+To: test@webhooks.getdropstream.com
+Content-Type: multipart/alternative; boundary=e89a8ff250b4b0dfb4053f656df9
+
+--xYzZY
+Content-Disposition: form-data; name="attachments"
+
+0
+--xYzZY
+Content-Disposition: form-data; name="dkim"
+
+{@getdropstream-com.20150623.gappssmtp.com : pass}
+--xYzZY
+Content-Disposition: form-data; name="subject"
+
+ere
+--xYzZY
+Content-Disposition: form-data; name="to"
+
+test@webhooks.getdropstream.com
+--xYzZY
+Content-Disposition: form-data; name="html"
+
+<div dir="ltr">body
+</div>
+
+--xYzZY
+Content-Disposition: form-data; name="text"
+
+body
+
+--xYzZY
+Content-Disposition: form-data; name="from"
+
+Karl Falconer <karl.falconer@getdropstream.com>
+--xYzZY
+Content-Disposition: form-data; name="sender_ip"
+
+74.125.82.54
+--xYzZY
+Content-Disposition: form-data; name="envelope"
+
+{"to":["test@webhooks.getdropstream.com"],"from":"karl.falconer@getdropstream.com"}
+--xYzZY
+Content-Disposition: form-data; name="charsets"
+
+{"to":"UTF-8","html":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"UTF-8"}
+--xYzZY
+Content-Disposition: form-data; name="SPF"
+
+none
+--xYzZY--

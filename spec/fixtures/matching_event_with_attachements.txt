@@ -1,0 +1,84 @@
+--xYzZY
+Content-Disposition: form-data; name="headers"
+
+Received: by mx0033p1mdw1.sendgrid.net with SMTP id jDZUDimWlq Fri, 21 Oct 2016 20:20:52 +0000 (UTC)
+Received: from mail-wm0-f47.google.com (mail-wm0-f47.google.com [74.125.82.47]) by mx0033p1mdw1.sendgrid.net (Postfix) with ESMTPS id AAAA3787079 for <test@webhooks.getdropstream.com>; Fri, 21 Oct 2016 20:20:51 +0000 (UTC)
+Received: by mail-wm0-f47.google.com with SMTP id c78so5186477wme.1 for <test@webhooks.getdropstream.com>; Fri, 21 Oct 2016 13:20:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=getdropstream-com.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=pIv07sqls3hQt0HZ1VLzgu2aJzRToVHjvwXOz8g41A0=; b=zkJZKSXMmFcohc5+ZABvE9qfIgRz3koG5OEWGevqcy7jQQpsMps5bqqErsaLU/f9Tf rH/Fu46QI2+xT63Is+RapVvENoVU1cH1ileGGR85aIJbKLqydrp41hsDKq0PisSsmt38 AkzVpq0S5Z0XFFrNNM5Ul6Ukp3talTs7VXLIyggCVLZoB1/nEBbSPjKMt3zwMryrHIF8 AXYHQQuBnEOzSbRqOJYfS7YHJBH957KbrOX/GboM7/aiFm5aCPG4QJhBzw61iLzcpQrk KEm1I/kS0z0hHXRkGtRM2txUnbSNbdwnBYErxGdcRPsAAeBpzyN5lM8rG1PmhjFtJ5AQ UoXw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=pIv07sqls3hQt0HZ1VLzgu2aJzRToVHjvwXOz8g41A0=; b=RW6P1ylZ+cpHG/aGe7c2vhGTxESVKQWZ7hN8aIG5tmCpRCt8GzDiE+QkyApq3+NuuP y3UhwIOz3LieEpGdCHzjJxToaZtvXo2T/d7Kr8reeEvrMJv8PRnXUEQIgxejY4N0VUi+ ckxK2cYK/63KGhTWQ369ZwDYycNL7rCuKLEQBKDieh/4ZjuPSQp/f3rmWAR9IobWQJWy H/SKSfne5V8r45By7rrZRtTJL8KJJVDqm8uLNViZw5v1+5wdG/c9h4sZIhTJuHF3ktqs Jmm48FGDd8Ofxc8c8bVsNTS6E5b5pTAke6cpboqmDBEmoo43u6D7m3uDn8IFZzlJCYlL B/Tw==
+X-Gm-Message-State: AA6/9Rk+yDSs8bEvYICBgABZa59I8bEW84iXp3Cji8iotuEQwjZzcwwgxMd0tPnBzHlVVo8k6RWntqpiG+GK3k8z51g=
+X-Received: by 10.28.153.76 with SMTP id b73mr4554958wme.60.1477081250139; Fri, 21 Oct 2016 13:20:50 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.80.161.6 with HTTP; Fri, 21 Oct 2016 13:20:49 -0700 (PDT)
+From: Karl Falconer <karl.falconer@getdropstream.com>
+Date: Fri, 21 Oct 2016 16:20:49 -0400
+Message-ID: <CABjXp4ExvGq5jW9Rw_ydjon5BNDFydFkbwKjMMCemteTpvTE6w@mail.gmail.com>
+Subject: ere
+To: test@webhooks.getdropstream.com
+Content-Type: multipart/mixed; boundary=001a114b312c384cb3053f65c791
+
+--xYzZY
+Content-Disposition: form-data; name="dkim"
+
+{@getdropstream-com.20150623.gappssmtp.com : pass}
+--xYzZY
+Content-Disposition: form-data; name="to"
+
+test@webhooks.getdropstream.com
+--xYzZY
+Content-Disposition: form-data; name="html"
+
+<div dir="ltr"><div><div class="gmail_signature" data-smartmail="gmail_signature"><div>attachment</div></div></div>
+</div>
+
+--xYzZY
+Content-Disposition: form-data; name="from"
+
+Karl Falconer <karl.falconer@getdropstream.com>
+--xYzZY
+Content-Disposition: form-data; name="text"
+
+attachment
+
+--xYzZY
+Content-Disposition: form-data; name="sender_ip"
+
+74.125.82.47
+--xYzZY
+Content-Disposition: form-data; name="attachment1"; filename="examples.txt"
+Content-Type: text/plain
+
+example_id                                            | status | run_time        |
+----------------------------------------------------- | ------ | --------------- |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:1:1]   | passed | 0.00042 seconds |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:2:1]   | passed | 0.00008 seconds |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:3:1:1] | passed | 0.00999 seconds |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:3:1:2] | passed | 0.01077 seconds |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:3:1:3] | passed | 0.01129 seconds |
+./spec/omnihooks/strategies/sendgrid_spec.rb[1:3:2:1] | passed | 0.14582 seconds |
+
+--xYzZY
+Content-Disposition: form-data; name="envelope"
+
+{"to":["test@webhooks.getdropstream.com"],"from":"karl.falconer@getdropstream.com"}
+--xYzZY
+Content-Disposition: form-data; name="attachments"
+
+1
+--xYzZY
+Content-Disposition: form-data; name="subject"
+
+ere
+--xYzZY
+Content-Disposition: form-data; name="attachment-info"
+
+{"attachment1":{"filename":"examples.txt","name":"examples.txt","charset":"US-ASCII","type":"text/plain"}}
+--xYzZY
+Content-Disposition: form-data; name="charsets"
+
+{"to":"UTF-8","html":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"UTF-8"}
+--xYzZY
+Content-Disposition: form-data; name="SPF"
+
+none
+--xYzZY--
